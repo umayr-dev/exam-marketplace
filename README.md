@@ -4,17 +4,15 @@ Mini Marketplace - bu kichik SPA-ilova bo'lib, foydalanuvchilar mahsulotlarni ko
 
 ## Ism
 
-Frontend Intern (Frontend ishlab chiquvchi stajyor) test topshirig'i
+Umar Kodirberganov
 
-## Vazifa qancha vaqt oldi
+## Vazifa qancha vaqt ketgani
 
-Vazifa bir kunda bajarildi.
+Vazifa bir yarim kunda bajarildi.
 
 ## Qiyin bo'lgan joylar
 
-- Vanilla JS va React o'rtasida integratsiya qilish - mahsulotlar ro'yxati vanilla JS bilan render qilinadi, lekin savat React komponenti sifatida ishlaydi. Bu ikki texnologiyani bir-biri bilan bog'lash uchun custom eventlar va global handler funksiyalaridan foydalanish kerak bo'ldi.
-- localStorage bilan ishlash - savat ma'lumotlarini saqlash va yuklash uchun useEffect hooklarini to'g'ri sozlash kerak edi.
-- Responsive dizayn - desktop versiyada ikki ustun, mobil qurilmalarda bloklar ketma-ket joylashishi uchun CSS Grid va media querylardan foydalanish kerak edi.
+Qiyinchiliklar bo'lmadi, barcha vazifalar osonlik bilan bajarildi.
 
 ## Texnologiyalar
 
@@ -56,6 +54,8 @@ npm build
 
 ### Desktop versiya
 
+![Desktop versiya](screenshot.png)
+
 Desktop versiyada ikki ustun ko'rinishida: chapda mahsulotlar, o'ngda savat.
 
 ### Mobil versiya
@@ -64,7 +64,7 @@ Mobil qurilmalarda bloklar ketma-ket pastma-past joylashadi.
 
 ## Demo havolasi
 
-Loyiha GitHub'da ochiq repository ko'rinishida joylangan.
+_(Agar demo mavjud bo'lsa, havola qo'shiladi)_
 
 ## GitHub Repository
 
