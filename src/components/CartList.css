@@ -1,0 +1,28 @@
+.cart-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+/* Scrollbar styling */
+.cart-list::-webkit-scrollbar {
+  width: 8px;
+}
+
+.cart-list::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+.cart-list::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.cart-list::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+

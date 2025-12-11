@@ -1,0 +1,40 @@
+.cart {
+  height: 100%;
+}
+
+.cart-empty {
+  text-align: center;
+  padding: 3rem 1rem;
+  color: #7f8c8d;
+}
+
+.cart-empty p {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.cart-summary {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 2px solid #e0e0e0;
+}
+
+.cart-totals {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.cart-total-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.1rem;
+}
+
+.cart-total-value {
+  font-weight: bold;
+  color: #27ae60;
+  font-size: 1.25rem;
+}
+
