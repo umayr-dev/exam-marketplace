@@ -68,4 +68,4 @@ Loyiha GitHub'da ochiq repository ko'rinishida joylangan.
 
 ## GitHub Repository
 
-https://github.com/username/mini-marketplace
+https://github.com/umayr-dev/exam-marketplace
