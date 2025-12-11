@@ -1,5 +1,3 @@
-// Vanilla JS - mahsulotlarni yuklash va ko'rsatish (React emas)
-
 export async function loadAndRenderProducts() {
   try {
     const response = await fetch("https://fakestoreapi.com/products");
@@ -15,7 +13,6 @@ export async function loadAndRenderProducts() {
   }
 }
 
-// Vanilla JS funksiyasi - mahsulotlarni render qilish
 function renderProducts(products) {
   const container = document.getElementById("products-container");
   if (!container) return;
@@ -42,13 +39,11 @@ function renderProducts(products) {
     container.appendChild(productCard);
   });
 
-  // Event listenerlarni qo'shish - "Add to cart" tugmalari uchun
   container.querySelectorAll(".add-to-cart-btn").forEach((btn) => {
     btn.addEventListener("click", () => {
       const productId = parseInt(btn.getAttribute("data-product-id"));
       const product = products.find((p) => p.id === productId);
       if (product) {
-        // Custom event yuborish - React komponenti uchun
         window.dispatchEvent(new CustomEvent("addToCart", { detail: product }));
       }
     });
