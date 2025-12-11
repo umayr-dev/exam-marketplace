@@ -1,13 +1,12 @@
-import CartList from './CartList'
-import './Cart.css'
+import CartList from "./CartList";
+import "./Cart.css";
 
 function Cart({ cart, onRemove, onUpdateQuantity }) {
-
   const totalPrice = cart.reduce((sum, item) => {
-    return sum + item.price * item.quantity
-  }, 0)
+    return sum + item.price * item.quantity;
+  }, 0);
 
-  const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0)
+  const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
 
   return (
     <div className="cart">
@@ -31,15 +30,16 @@ function Cart({ cart, onRemove, onUpdateQuantity }) {
               </div>
               <div className="cart-total-item">
                 <span>Total Price:</span>
-                <span className="cart-total-value">${totalPrice.toFixed(2)}</span>
+                <span className="cart-total-value">
+                  ${totalPrice.toFixed(2)}
+                </span>
               </div>
             </div>
           </div>
         </>
       )}
     </div>
-  )
+  );
 }
 
-export default Cart
-
+export default Cart;

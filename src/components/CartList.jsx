@@ -1,10 +1,10 @@
-import CartItem from './CartItem'
-import './CartList.css'
+import CartItem from "./CartItem";
+import "./CartList.css";
 
 function CartList({ items, onRemove, onUpdateQuantity }) {
   return (
     <div className="cart-list">
-      {items.map(item => (
+      {items.map((item) => (
         <CartItem
           key={item.id}
           item={item}
@@ -13,8 +13,7 @@ function CartList({ items, onRemove, onUpdateQuantity }) {
         />
       ))}
     </div>
-  )
+  );
 }
 
-export default CartList
-
+export default CartList;

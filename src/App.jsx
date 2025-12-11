@@ -38,6 +38,22 @@ function App() {
     })
   }
 
+  const removeFromCart = (productId) => {
+    setCart(prevCart => prevCart.filter(item => item.id !== productId))
+  }
+
+  const updateQuantity = (productId, quantity) => {
+    if (quantity <= 0) {
+      removeFromCart(productId)
+      return
+    }
+    setCart(prevCart =>
+      prevCart.map(item =>
+        item.id === productId ? { ...item, quantity } : item
+      )
+    )
+  }
+
   // Vanilla JS - mahsulotlarni yuklash va ko'rsatish (React emas)
   useEffect(() => {
     loadAndRenderProducts()
@@ -59,22 +75,6 @@ function App() {
       window.removeEventListener('addToCart', handleAddToCart)
     }
   }, [])
-
-  const removeFromCart = (productId) => {
-    setCart(prevCart => prevCart.filter(item => item.id !== productId))
-  }
-
-  const updateQuantity = (productId, quantity) => {
-    if (quantity <= 0) {
-      removeFromCart(productId)
-      return
-    }
-    setCart(prevCart =>
-      prevCart.map(item =>
-        item.id === productId ? { ...item, quantity } : item
-      )
-    )
-  }
 
   return (
     <div className="app">

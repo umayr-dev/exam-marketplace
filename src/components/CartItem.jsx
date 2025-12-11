@@ -1,10 +1,10 @@
-import './CartItem.css'
+import "./CartItem.css";
 
 function CartItem({ item, onRemove, onUpdateQuantity }) {
   const handleQuantityChange = (delta) => {
-    const newQuantity = item.quantity + delta
-    onUpdateQuantity(item.id, newQuantity)
-  }
+    const newQuantity = item.quantity + delta;
+    onUpdateQuantity(item.id, newQuantity);
+  };
 
   return (
     <div className="cart-item">
@@ -38,8 +38,7 @@ function CartItem({ item, onRemove, onUpdateQuantity }) {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default CartItem
-
+export default CartItem;
